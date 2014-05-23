@@ -34,8 +34,6 @@ facts::external { 'mypuppetclass_applied_timestamp':
 ```
 
 Support
-
-Support
 -------
 
 Please log tickets and issues at our [Projects site](http://github.com/meltwater/puppet-facts)
