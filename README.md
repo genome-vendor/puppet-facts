@@ -22,8 +22,18 @@ facts::external::instance:
     value: "Dont reboot me!"
 ```
 
-Based on the above, it should be obvious how to call this class from within your own Puppet classes if you want to.
+The Defined Type is available as facts::external, allowing your Puppet classes to create arbitrary Puppet Facts. e.g.
 
+```
+facts::external { 'mypuppetclass_applied':
+  value => true,
+}
+facts::external { 'mypuppetclass_applied_timestamp':
+  value => strftime("%Y-%m-%d"),
+}
+```
+
+Support
 
 Support
 -------
