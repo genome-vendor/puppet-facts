@@ -14,6 +14,7 @@ define facts::instance (
   exec { "${name} mkdir -p /etc/facter/facts.d/":
     command => 'mkdir -p /etc/facter/facts.d/',
     creates => '/etc/facter/facts.d/',
+    path    => '/bin',
   }
 
   file { "${facterpath}/${factname}.txt":
